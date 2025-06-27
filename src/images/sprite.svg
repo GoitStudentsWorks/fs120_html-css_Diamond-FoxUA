@@ -1,1 +1,11 @@
 <!-- тут будуть всі оптимізовані svg зображення -->
+<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
+    <defs>
+        <symbol id="icon-menu" viewBox="0 0 32 32">
+            <path d="M5.333 8h21.333v2.667H5.333V8zm0 6.667h21.333v2.667H5.333v-2.667zm0 6.666h21.333V24H5.333v-2.667z"/>
+        </symbol>
+        <symbol id="icon-cross" viewBox="0 0 32 32">
+            <path d="m21.589 8.459-5.657 5.656-5.656-5.656-1.885 1.885L14.047 16l-5.656 5.656 1.885 1.885 5.656-5.656 5.657 5.656 1.885-1.885L17.818 16l5.656-5.656-1.885-1.885z"/>
+        </symbol>
+    </defs>
+</svg>
