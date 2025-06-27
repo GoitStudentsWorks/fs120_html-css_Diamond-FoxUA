@@ -1,0 +1,27 @@
+.feedbacks {
+    padding: 32px 0;
+}
+
+.feedbacks .section-heading {
+    margin-bottom: 32px;
+}
+
+.feedback-text {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.4;
+    letter-spacing: 0.01em;
+    color: #030a06;
+    margin-bottom: 12px;
+}
+
+.name {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.star {
+    fill: #030a06;
+}
