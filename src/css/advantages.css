@@ -1,0 +1,45 @@
+.section.advantages {
+    padding: 32px 0;
+}
+
+.advant-subtitle {
+    margin-bottom: 12px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.title.advant-title {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.advant-description {
+    margin-bottom: 48px;
+}
+
+.advant-list {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.advant-item {
+    width: 100%;
+}
+
+.advant-image {
+    margin-bottom: 8px;
+    border-radius: 32px;
+    object-fit: cover;
+}
+
+.advant-second-title {
+    margin-bottom: 4px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.4;
+    letter-spacing: 0.01em;
+    font-family: var(--second-family);
+}
+
+

@@ -2,7 +2,7 @@
     padding: 32px 0;
 }
 
-.feedbacks .section-heading {
+.feedbacks .title {
     margin-bottom: 32px;
 }
 
@@ -22,6 +22,24 @@
     line-height: 1.6;
 }
 
+.testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.stars-list {
+    display: flex;
+    gap: 4px;
+}
+
 .star {
     fill: #030a06;
+}
+
+.five-stars .star,
+.four-stars .star:not(:last-child),
+.three-stars .star:not(:last-child, :nth-child(4)),
+.two-stars .star:not(:last-child, :nth-child(4), :nth-child(3)) {
+    fill: #3ac04c;
 }
