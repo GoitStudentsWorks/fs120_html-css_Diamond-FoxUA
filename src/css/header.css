@@ -40,7 +40,7 @@
 .nav-link,
 .contacts-link {
   color: #030a06;
-  transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 300ms ease-in-out;
 }
 
 .nav-link:hover,
@@ -70,7 +70,7 @@
 .menu-icon,
 .menu-close-icon {
   fill: #030a06;
-  transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 300ms ease-in-out;
 }
 
 @media screen and (min-width: 1440px) {
@@ -128,8 +128,7 @@
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 300ms ease-in-out, visibility 300ms ease-in-out;
   overflow: auto;
 }
 
