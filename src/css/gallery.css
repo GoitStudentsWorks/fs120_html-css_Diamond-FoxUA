@@ -3,16 +3,11 @@
   padding: 32px 0;
 }
 
-.gallery .container {
-  max-width: 288px;
-  width: 100%;
-}
-
-.gallery .section-title {
+.gallery .title {
   margin-bottom: 16px;
 }
 
-.gallery .section-subtitle {
+.gallery .subtitle {
   font-weight: 400;
   font-size: 18px;
   text-align: center;
@@ -25,10 +20,6 @@
   gap: 16px;
 }
 
-.gallery .gallery-item {
-  border-radius: 32px;
-}
-
 .gallery img {
   border-radius: 32px;
 }
@@ -39,18 +30,12 @@
     padding: 64px 0;
   }
 
-  .gallery .container {
-    max-width: 768px;
-    margin: 0 auto;
-    padding: 0;
-  }
-  .gallery .section-title {
+  .gallery .title {
+    padding: 0 32px;
     margin-bottom: 24px;
   }
-
-  .gallery-item {
-    max-width: 340px;
-    max-height: 700px;
+  .gallery .subtitle {
+    padding: 0 32px;
   }
 
   .gallery-list img {
@@ -62,7 +47,6 @@
     grid-template-columns: repeat(2, 1fr); /* Створює дві однакові колонки */
     grid-template-rows: repeat(3, 1fr); /* Формує три рівні рядки */
     gap: 24px; /* Простір між елементами сітки */
-    margin: 0 32px;
   }
 
   .gallery-list .gallery-item:nth-child(4) {
@@ -89,17 +73,8 @@
 
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1440px) {
-  .gallery .container {
-    max-width: 1440px;
-    padding: 0 64px;
-  }
-  .gallery .section-title {
+  .gallery .title {
     font-size: 48px;
-  }
-
-  .gallery-item {
-    max-width: 421px;
-    max-height: 865px;
   }
 
   .gallery-list img {
@@ -108,14 +83,14 @@
 
   .gallery-list {
     grid-template-columns: repeat(3, 1fr); /* Створює три однакові колонки */
-    grid-template-rows: repeat(2, 1fr);/* Формує два рівні рядки */
+    grid-template-rows: repeat(2, 1fr); /* Формує два рівні рядки */
     margin: 0;
   }
-  .gallery-list .gallery-item:nth-child(3){
+  .gallery-list .gallery-item:nth-child(3) {
     grid-column-start: 3; /* Стоїть у третій колонці */
     grid-row-start: 1; /* Починає з першого рядка */
   }
-  .gallery-list .gallery-item:nth-child(1){
+  .gallery-list .gallery-item:nth-child(1) {
     grid-column-start: 1; /* Розміщується в першій колонці */
     grid-row-start: 2; /* Починається з другого рядка */
   }
