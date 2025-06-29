@@ -1,23 +1,30 @@
 <section class="support">
   <div class="container">
-    <h2 class="support-title">Залишились питання? Зв'яжіться з нами!</h2>
+    <h2 class="title support-title">Залишились питання? Зв'яжіться з нами!</h2>
     <h3 class="support-subtitle">Ми тут, щоб допомогти!</h3>
     <form class="support-form">
-      <label for="user-name">Ім'я</label>
-      <input type="text" placeholder="Іван" class="user-name" id="user-name" />
-      <label for="user-email">Електронна пошта</label>
-      <input
-        type="email"
-        placeholder="hello@ecotote.com"
-        class="user-email"
-        id="user-email"
-      />
-      <label for="message">Повідомлення</label>
-      <textarea
-        name="message"
-        id="message"
-        placeholder="Введіть своє повідомлення..."
-      ></textarea>
+      <div class="form-item">
+        <label for="user-name">Ім'я</label>
+        <input type="text" placeholder="Іван" class="input" id="user-name" />
+      </div>
+      <div class="form-item">
+        <label for="user-email">Електронна пошта</label>
+        <input
+          type="email"
+          placeholder="hello@ecotote.com"
+          class="input"
+          id="user-email"
+        />
+      </div>
+      <div class="input-item">
+        <label class="label" for="message">Повідомлення</label>
+        <textarea
+          class="textarea input"
+          name="message"
+          id="message"
+          placeholder="Введіть своє повідомлення..."
+        ></textarea>
+      </div>
       <button type="submit" class="support-btn">Надіслати</button>
     </form>
     <div class="support-img">
