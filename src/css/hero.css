@@ -58,14 +58,9 @@
   margin-right: auto;
 }
 
-.hero__container {
-  padding-bottom: 64px;
-}
-
 .hero__content-wrapper {
   display: flex;
-  /* flex-wrap: wrap; */
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   width: 100%;
   max-width: 288px;
   box-sizing: border-box;
