@@ -35,6 +35,8 @@
   cursor: pointer;
   display: block;
   transition: background 0.2s, color 0.2s;
+  transition: background 300ms ease-in-out, color 300ms ease-in-out,
+    transform 300ms ease-in-out;
 }
 
 .hero__link {
@@ -57,7 +59,6 @@
   margin-left: auto;
   margin-right: auto;
 }
-
 .hero__content-wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -140,5 +141,14 @@
     width: 100%;
     max-width: 1312px;
     height: 498px;
+  }
+  .hero__button:hover,
+  .hero__button:focus {
+    background: #113916;
+    opacity: 0.6;
+  }
+  .hero__button:active {
+    background: transparent;
+    opacity: 0.5;
   }
 }
