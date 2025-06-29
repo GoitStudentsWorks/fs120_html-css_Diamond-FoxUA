@@ -54,7 +54,6 @@
     line-height: 1.6;
     color: #030a06;
 }
-
 .support-form input {
     width: 288px;
     height: 42px;
@@ -218,5 +217,5 @@
         .support-img {
             background-image: url(/images/support/studio-desktop-3x-min.jpg);
         }
-    }
+  }
 }
