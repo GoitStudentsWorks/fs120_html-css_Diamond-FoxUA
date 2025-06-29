@@ -6,18 +6,30 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 20px;
+  padding: 0 12px 0 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .header-container {
+    padding: 0 16px 0 32px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .header-container {
+    padding: 0 64px;
+  }
 }
 
 .logo {
+  width: 84px;
+  height: 64px;
   padding: 14px 0;
   display: block;
 }
 
 .logo-icon {
   fill: #030a06;
-  width: 84px;
-  height: 36px;
 }
 
 .header-nav-list,
@@ -28,7 +40,7 @@
 .nav-link,
 .contacts-link {
   color: #030a06;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 300ms ease-in-out;
 }
 
 .nav-link:hover,
@@ -45,16 +57,64 @@
 
 .menu-button,
 .menu-close-btn {
-  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  padding: 0;
   border: none;
   background-color: transparent;
 }
 
 .menu-icon,
 .menu-close-icon {
-  display: block;
   fill: #030a06;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 300ms ease-in-out;
+}
+
+@media screen and (min-width: 1440px) {
+  .menu-button {
+    display: none;
+  }
+
+  .nav-link,
+  .contacts-link {
+    display: block;
+    padding: 23px 0;
+  }
+
+  .header-nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .header-logo {
+    width: 106px;
+    height: 72px;
+    padding: 13.5px 0;
+    margin-right: 175px;
+  }
+
+  .logo-icon {
+    width: 106px;
+    height: 45px;
+  }
+
+  .header-nav-list,
+  .header-contacts-list {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .header-contacts {
+    display: block;
+  }
+
+  .header-contacts-list {
+    gap: 16px;
+  }
 }
 
 /* navbar */
@@ -68,9 +128,14 @@
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 300ms ease-in-out, visibility 300ms ease-in-out;
   overflow: auto;
+}
+
+@media screen and (min-width: 1440px) {
+  .menu {
+    display: none;
+  }
 }
 
 .menu.is-open {
@@ -84,7 +149,13 @@
   justify-content: space-between;
   flex-direction: column;
   height: 100%;
-  padding: 0 20px 92px;
+  padding: 0 12px 92px 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-container {
+    padding: 0 16px 128px 32px;
+  }
 }
 
 .menu-header {
