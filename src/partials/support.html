@@ -1,63 +1,46 @@
 <section class="support">
   <div class="container">
-    <h2 class="title support-title">Залишились питання? Зв'яжіться з нами!</h2>
-    <h3 class="support-subtitle">Ми тут, щоб допомогти!</h3>
-    <form class="support-form">
-      <div class="form-item">
-        <label for="user-name">Ім'я</label>
-        <input type="text" placeholder="Іван" class="input" id="user-name" />
+    <div class="support-txt">
+      <div class="support-header">
+        <h2 class="support-title">Залишились питання? Зв'яжіться з нами!</h2>
+        <h3 class="support-subtitle">Ми тут, щоб допомогти!</h3>
       </div>
-      <div class="form-item">
-        <label for="user-email">Електронна пошта</label>
-        <input
-          type="email"
-          placeholder="hello@ecotote.com"
-          class="input"
-          id="user-email"
-        />
-      </div>
-      <div class="input-item">
-        <label class="label" for="message">Повідомлення</label>
-        <textarea
-          class="textarea input"
-          name="message"
-          id="message"
-          placeholder="Введіть своє повідомлення..."
-        ></textarea>
-      </div>
-      <button type="submit" class="support-btn">Надіслати</button>
-    </form>
-    <div class="support-img">
-      <picture>
-        <source
-          srcset="
-            /images/support/studio-desktop-min.jpg    1x,
-            /images/support/studio-desktop-2x-min.jpg 2x,
-            /images/support/studio-desktop-3x-min.jpg 3x
-          "
-          media="(min-width: 1440px)"
-        />
-        <source
-          srcset="
-            /images/support/studio-tab-min.jpg    1x,
-            /images/support/studio-tab-2x-min.jpg 2x,
-            /images/support/studio-tab-3x-min.jpg 3x
-          "
-          media="(min-width: 768px)"
-        />
-        <source
-          srcset="
-            /images/support/studio-mobile-min.jpg    1x,
-            /images/support/studio-mobile-2x-min.jpg 2x,
-            /images/support/studio-mobile-3x-min.jpg 3x
-          "
-          media="(min-width: 320px)"
-        />
-        <img
-          src="/images/support/studio-desktop-min.jpg"
-          alt="A studio space with sketches, fabric samples, scissors, and a half-finished eco tote bag on a work table."
-        />
-      </picture>
+      <form class="support-form">
+        <label for="user-name"
+          >Ім'я
+          <input
+            type="text"
+            placeholder="Іван"
+            class="user-name"
+            id="user-name"
+            minlength="5"
+            maxlength="64"
+            required
+          />
+        </label>
+        <label for="user-email"
+          >Електронна пошта
+          <input
+            type="email"
+            placeholder="hello@ecotote.com"
+            class="user-email"
+            id="user-email"
+            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+            required
+          />
+        </label>
+        <label for="message"
+          >Повідомлення
+          <textarea
+            name="message"
+            id="message"
+            placeholder="Введіть своє повідомлення..."
+            maxlength="500"
+          ></textarea>
+        </label>
+        <button type="submit" class="support-btn">Надіслати</button>
+      </form>
     </div>
+    <div class="support-img"></div>
   </div>
 </section>
