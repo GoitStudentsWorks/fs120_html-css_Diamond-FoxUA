@@ -105,12 +105,12 @@
 }
 
 @media screen and (min-width: 768px) {
+  .footer {
+    padding: 64px 0;
+  }
+
   .footer-container {
     max-width: 768px;
-
-    padding: 64px 32px;
-    align-items: stretch;
-    gap: unset;
   }
   .footer-top {
     display: flex;
@@ -120,6 +120,7 @@
   .footer-logo {
     display: flex;
     justify-content: center;
+    
   }
 
   .footer-logo .logo-icon {
