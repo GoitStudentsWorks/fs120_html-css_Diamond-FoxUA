@@ -11,4 +11,12 @@
   function toggleMenu() {
     refs.menu.classList.toggle('is-open');
   }
+
+  const links = refs.menu.querySelectorAll('a[href^="#"]');
+
+  for (let i = 0; i < links.length; i++) {
+    links[i].addEventListener('click', function () {
+      refs.menu.classList.remove('is-open');
+    });
+  }
 })();

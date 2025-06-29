@@ -67,6 +67,11 @@
   background-color: transparent;
 }
 
+.menu-button:active,
+.menu-close-btn:active {
+  background-color: transparent;
+}
+
 .menu-icon,
 .menu-close-icon {
   fill: #030a06;
