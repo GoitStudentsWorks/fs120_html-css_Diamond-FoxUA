@@ -70,7 +70,6 @@
 
 .paragraf-hero {
   margin-bottom: 24px;
-  /* width: 100%; */
 }
 
 @media screen and (min-width: 768px) {
@@ -97,6 +96,7 @@
     border-radius: 40px;
     height: 267px;
   }
+
   .hero__subtitle {
     font-size: 18px;
     text-align: left;
@@ -108,11 +108,13 @@
     height: 50px;
     white-space: nowrap;
   }
+
   .hero__textblock,
   .paragraf-hero {
     width: calc((100% - 24px) / 2);
   }
 }
+
 @media screen and (min-width: 1440px) {
   .hero {
     margin: 0 auto;
@@ -122,6 +124,7 @@
     gap: 32px;
     max-width: 1312px;
   }
+
   .paragraf-hero,
   .hero__textblock {
     width: calc((100% - 32px) / 2);
@@ -131,6 +134,7 @@
     font-size: 56px;
     margin-bottom: 32px;
   }
+
   .paragraf-hero,
   .hero__subtitle {
     font-size: 18px;
@@ -142,11 +146,13 @@
     max-width: 1312px;
     height: 498px;
   }
+
   .hero__button:hover,
   .hero__button:focus {
     background: #113916;
     opacity: 0.6;
   }
+
   .hero__button:active {
     background: transparent;
     opacity: 0.5;
