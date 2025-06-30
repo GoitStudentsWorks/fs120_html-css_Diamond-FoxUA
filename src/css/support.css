@@ -4,11 +4,11 @@
 }
 
 .support .container {
-    width: 320px;
     padding: 0 16px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 36px;
 }
 
@@ -124,6 +124,16 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+
+.support-form input:valid,
+.support-form textarea:valid {
+    border: 1px solid green;
+}
+
+.support-form input:invalid,
+.support-form textarea:invalid {
+    border: 1px solid #d64040;
 }
 
 @media screen and (min-resolution: 2x) {
