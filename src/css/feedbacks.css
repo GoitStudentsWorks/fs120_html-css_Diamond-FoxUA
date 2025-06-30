@@ -13,7 +13,6 @@
     line-height: 1.4;
     letter-spacing: 0.01em;
     color: #030a06;
-    margin-bottom: 12px;
 }
 
 .name {
@@ -28,12 +27,24 @@
     gap: 40px;
 }
 
+.testimonials-item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.testimonials-item:last-child .stars-list {
+    margin-bottom: 12px;
+}
+
 .stars-list {
     display: flex;
     gap: 4px;
 }
 
 .star {
+    line-height: 0;
     fill: #030a06;
 }
 
@@ -42,4 +53,39 @@
 .three-stars .star:not(:last-child, :nth-child(4)),
 .two-stars .star:not(:last-child, :nth-child(4), :nth-child(3)) {
     fill: #3ac04c;
+}
+
+@media screen and (min-width: 768px) {
+    
+    .feedbacks {
+            padding: 64px 0;
+        }
+
+    .testimonials {
+        gap: 24px;
+        row-gap: 32px;
+    }
+
+    .testimonials-item {
+        width: calc((100% - 24px) / 2);
+        gap: 24px;
+    }
+
+        .testimonials-item:last-child .stars-list {
+            margin-bottom: 0;
+        }
+}
+
+@media screen and (min-width: 1440px) {
+
+    .feedbacks .title {
+        max-width: 560px;
+        font-size: 48px;
+        margin: 0 auto;
+        margin-bottom: 80px;
+    }
+
+    .testimonials-item {
+        width: calc((100% - 72px) / 4);
+    }
 }
