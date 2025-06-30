@@ -69,7 +69,7 @@
 
 .menu-button:active,
 .menu-close-btn:active {
-  background-color: transparent;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .menu-icon,
