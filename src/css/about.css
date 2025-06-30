@@ -16,10 +16,6 @@
       url(/images/about/bg-mobile@2x-min.jpg);
   }
 }
-.about-container {
-  display: block;
-  align-items: center;
-}
 
 .about-content {
   min-width: 228px;
@@ -31,7 +27,6 @@
   font-size: 16px;
   line-height: 150%;
   text-align: center;
-  color: var(--color-white);
   color: #fff;
   margin-bottom: 12px;
 }
@@ -78,18 +73,19 @@
     height: 462px;
     padding: 112px 0;
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-      url(/images/about/bg-dasktop-min.jpg);
+      url(/images/about/bg-desktop-min.jpg);
   }
 
   @media (min-resolution: 192dpi) {
     .about {
       background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-        url(/images/about/bg-dasktop@2x-min.jpg);
+        url(/images/about/bg-desktop@2x-min.jpg);
     }
   }
   .about-heading {
     font-size: 56px;
-    width: 629px;
+    width: 100%;
+    max-width: 629px;
     margin: 0 auto 24px;
   }
 }

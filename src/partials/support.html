@@ -1,4 +1,4 @@
-<section class="support">
+<section class="support" id="support">
   <div class="container">
     <div class="support-txt">
       <div class="support-header">
@@ -15,6 +15,7 @@
             id="user-name"
             minlength="5"
             maxlength="64"
+            pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
             required
           />
         </label>
@@ -25,7 +26,7 @@
             placeholder="hello@ecotote.com"
             class="user-email"
             id="user-email"
-            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+            pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
             required
           />
         </label>
