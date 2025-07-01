@@ -25,6 +25,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 91px;
 }
 
 .product-item-img {
@@ -147,7 +148,6 @@
 
     .product-item-content {
         width: 310px;
-        height: 91px;
     }
 
     .product-item-btn{
