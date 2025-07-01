@@ -4,11 +4,11 @@
 }
 
 .support .container {
+    width: 320px;
     padding: 0 16px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 36px;
 }
 
@@ -41,19 +41,21 @@
 .support-form {
     display: flex;
     flex-direction: column;
-    gap: 24px;
 }
 
 .support-form label {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
     font-family: "Fira Sans", sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.6;
     color: #030a06;
+    margin-top: 24px;
 }
+
+.support-form label:first-of-type {
+    margin-top: 0;
+}
+
 .support-form input {
     width: 288px;
     height: 42px;
@@ -61,10 +63,53 @@
     border: 1px solid rgba(3, 10, 6, 0.15);
     border-radius: 6px;
     background: rgba(3, 10, 6, 0.05);
+    margin-top: 8px;
 }
 
 .support-form input:focus {
     outline: none;
+}
+
+.user-name:not(:placeholder-shown):invalid {
+    border-color: #d64040;
+}
+
+.text-invalid-name {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.6;
+    color: #d64040;
+    margin: 0;
+    display: none;
+}
+
+.user-name:not(:placeholder-shown):invalid~.text-invalid-name {
+    display: block;
+}
+
+.user-email:not(:placeholder-shown):invalid {
+    border-color: #d64040;
+}
+
+.text-invalid-email {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.6;
+    color: #d64040;
+    margin: 0;
+    display: none;
+}
+
+.user-email:not(:placeholder-shown):invalid~.text-invalid-email {
+    display: block;
+}
+
+.support-form input.user-name:valid,
+.support-form input.user-email:valid {
+    background: rgba(3, 10, 6, 0.05);
+    border: 1px solid rgba(3, 10, 6, 0.15);
 }
 
 .support-form input::placeholder {
@@ -83,18 +128,8 @@
     height: 180px;
     background: rgba(3, 10, 6, 0.05);
     resize: none;
-}
-
-.support-form textarea:focus {
+    margin-top: 8px;
     outline: none;
-}
-
-.support-form textarea::placeholder {
-    font-family: "Fira Sans", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.6;
-    color: rgba(3, 10, 6, 0.6);
 }
 
 .support-btn {
@@ -106,6 +141,7 @@
     background: #030a06;
     color: #fff;
     outline: none;
+    margin-top: 24px;
     transition: background-color 300ms ease-in-out, border-color 300ms ease-in-out;
 }
 
@@ -124,16 +160,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-}
-
-.support-form input:valid,
-.support-form textarea:valid {
-    border: 1px solid green;
-}
-
-.support-form input:invalid,
-.support-form textarea:invalid {
-    border: 1px solid #d64040;
 }
 
 @media screen and (min-resolution: 2x) {
@@ -227,5 +253,5 @@
         .support-img {
             background-image: url(/images/support/studio-desktop-3x-min.jpg);
         }
-  }
+    }
 }
