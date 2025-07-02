@@ -154,13 +154,18 @@ textarea.textarea-limit {
     color: #fff;
     outline: none;
     margin-top: 24px;
-    transition: background-color 300ms ease-in-out, border-color 300ms ease-in-out;
+    transition: background-color 300ms ease-in-out, border-color 300ms ease-in-out, opacity 300ms ease-in-out;
 }
 
 .support-btn:hover,
 .support-btn:focus {
     background-color: rgba(4, 12, 7, 0.5);
     border-color: rgba(4, 12, 7, 0.025);
+}
+
+.support-btn:active {
+    background: #113916;
+    opacity: 0.6;
 }
 
 .support-img {
