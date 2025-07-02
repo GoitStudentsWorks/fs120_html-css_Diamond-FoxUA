@@ -161,6 +161,10 @@ textarea.textarea-limit {
   background-color: rgba(4, 12, 7, 0.5);
   border-color: rgba(4, 12, 7, 0.025);
 }
+.support-btn:active {
+  background-color: #113916;
+  opacity: .6;
+}
 
 .support-img {
   background-image: url(/images/support/studio-mobile-min.jpg);
