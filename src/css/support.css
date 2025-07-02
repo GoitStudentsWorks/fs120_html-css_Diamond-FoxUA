@@ -87,7 +87,8 @@
     display: block;
 }
 
-.user-email:not(:placeholder-shown):invalid {
+.user-email:not(:placeholder-shown):invalid,
+textarea.textarea-limit {
     border-color: #d64040;
 }
 
@@ -118,6 +119,8 @@
     line-height: 1.6;
     color: rgba(3, 10, 6, 0.6);
 }
+
+
 
 .support-form textarea {
     border: 1px solid rgba(3, 10, 6, 0.15);
