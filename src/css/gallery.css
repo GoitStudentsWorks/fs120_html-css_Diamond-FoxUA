@@ -79,6 +79,11 @@
 
   .gallery-list img {
     width: 421px;
+    transition: transform 300ms ease-in-out;
+  }
+
+  .gallery-list img:hover {
+    transform: scale(1.05);
   }
 
   .gallery-list {

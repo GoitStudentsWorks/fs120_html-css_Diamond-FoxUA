@@ -1,6 +1,7 @@
 :root {
-    --font-family: "Fira Sans", sans-serif;
-    --second-family: "Comfortaa", sans-serif;
+  --font-family: 'Fira Sans', sans-serif;
+  --second-family: 'Comfortaa', sans-serif;
+  --color-neutral-darkest: #030a06;
 }
 
 body {
@@ -21,4 +22,3 @@ body {
   text-align: center;
   color: #030a06;
 }
-
