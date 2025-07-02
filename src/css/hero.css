@@ -21,7 +21,6 @@
 }
 
 .hero__button {
-  border: 1px solid #030a06;
   border-radius: 6px;
   padding: 12px 24px;
   width: 100%;
@@ -122,6 +121,7 @@
   .paragraf-hero {
     width: calc((100% - 24px) / 2);
   }
+
   .hero__textblock {
     margin-bottom: 0;
   }
