@@ -12,9 +12,10 @@
           placeholder="Іван"
           class="user-name"
           id="user-name"
-          pattern=".{5,64}"
+          maxlength="64"
+          minlength="5"
           required
-        />
+          />
         <p class="text-invalid-name">Error text</p>
 
         <label for="user-email">Електронна пошта</label>
