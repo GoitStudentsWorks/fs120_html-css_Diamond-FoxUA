@@ -148,7 +148,8 @@ textarea.textarea-limit {
 }
 
 .support-btn:hover,
-.support-btn:focus {
+.support-btn:focus,
+.support-btn:active {
     background-color: rgba(4, 12, 7, 0.5);
     border-color: rgba(4, 12, 7, 0.025);
 }
