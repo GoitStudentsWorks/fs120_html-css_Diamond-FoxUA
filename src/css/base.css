@@ -1,7 +1,10 @@
 :root {
-  --font-family: 'Fira Sans', sans-serif;
-  --second-family: 'Comfortaa', sans-serif;
-  --color-neutral-darkest: #030a06;
+    --font-family: "Fira Sans", sans-serif;
+    --second-family: "Comfortaa", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
