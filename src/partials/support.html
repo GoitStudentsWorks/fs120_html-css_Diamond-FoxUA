@@ -15,8 +15,8 @@
           maxlength="64"
           minlength="5"
           required
-          />
-          <p class="text-invalid-name">Недостатньо символів</p>
+        />
+        <p class="text-invalid-name">Недостатньо символів</p>
 
         <label for="user-email">Електронна пошта</label>
         <input
@@ -32,11 +32,11 @@
         <label for="message">Повідомлення</label>
         <textarea
           name="message"
-          id="message"
+          id="message" 
           placeholder="Введіть своє повідомлення..."
           maxlength="500"
         ></textarea>
-        </label>
+        <span class="text-invalid-message">Перевищено ліміт у 500 символів</span>
         <button type="submit" class="support-btn">Надіслати</button>
       </form>
     </div>
