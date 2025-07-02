@@ -45,14 +45,14 @@
     font-size: 18px;
     line-height: 1.6;
     text-align: center;
-    color: var(--color-neutral-darkest);
+    color: #030a06;
 }
 
 .product-item-text {
     font-size: 14px;
     line-height: 1.6;
     text-align: center;
-    color: var(--color-neutral-darkest);
+    color: #030a06;
     max-width: 288px;
 }
 
@@ -61,7 +61,7 @@
     font-size: 20px;
     line-height: 1.6;
     text-align: center;
-    color: var(--color-neutral-darkest);
+    color: #030a06;
     margin-top: 8px;
 }
 
