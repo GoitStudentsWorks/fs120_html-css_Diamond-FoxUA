@@ -68,11 +68,13 @@
   padding: 0;
   border: none;
   background-color: transparent;
+  transition: transform 300ms ease-in-out;
 }
 
 .menu-button:active,
 .menu-close-btn:active {
   -webkit-tap-highlight-color: transparent;
+  transform: scale(0.9);
 }
 
 .menu-icon,
