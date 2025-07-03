@@ -14,10 +14,10 @@
 
 .hero__subtitle {
   margin-bottom: 24px;
-  /* font-family: 'Fira Sans', sans-serif;
+  font-family: 'Fira Sans', sans-serif;
   font-weight: 400;
   font-size: 16px;
-  color: #030a06; */
+  color: #030a06;
 }
 
 .hero__button {
