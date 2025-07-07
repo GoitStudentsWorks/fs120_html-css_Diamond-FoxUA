@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/ecotote/",
+    "build": "vite build --base=/fs120_html-css_Diamond-FoxUA/",
     "preview": "vite preview"
   },
   "devDependencies": {
